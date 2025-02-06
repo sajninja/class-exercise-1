@@ -10,10 +10,16 @@
     const canvas = document.getElementById("canvas");
     if (canvas.getContext) {
     const ctx = canvas.getContext("2d");
-    ctx.fillStyle = "rgb(0, 255, 200)";
-    ctx.fillRect(10, 10, 50, 50);
-    ctx.fillStyle = "rgb(200, 0, 50)";
-    ctx.fillRect(40, 40, 50, 50);
+    // ctx.fillStyle = "rgb(0, 255, 200)";
+    // ctx.fillRect(10, 10, 50, 50);
+    // ctx.fillStyle = "rgb(200, 0, 50)";
+    // ctx.fillRect(40, 40, 50, 50);
+
+      ctx.beginPath();
+      ctx.moveTo(75, 50);
+      ctx.moveTo(100, 75);
+      ctx.moveTo(100, 25);
+      ctx.fill;
       }
     }
     draw();

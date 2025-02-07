@@ -10,12 +10,13 @@
             const canvas = document.getElementById("canvas");
             if (canvas.getContext) {
             const ctx = canvas.getContext("2d");
-            // ctx.fillStyle = "rgb(50, 200, 200)";
-            // ctx.fillRect(10, 10, 150, 100);
-            
+            ctx.fillStyle = "rgb(50, 200, 200)";
+            ctx.fillRect(10, 10, 150, 100);
+
+            ctx.fillStyle = "rgb(200, 50, 50)";
             ctx.beginPath();
-            ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-            ctx.stroke();
+            ctx.arc(200, 50, 50, 0, 2 * Math.PI);
+            ctx.fill();
 
       // ctx.beginPath();
       // ctx.moveTo(75, 50);

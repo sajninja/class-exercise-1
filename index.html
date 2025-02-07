@@ -41,6 +41,19 @@
     draw();
     </script>
 
-    <input type="reset" value="Clear">
+    <button onclick="clearCanvas()">Clear Canvas</button>
+
+    	<script>
+		function clearCanvas() {
+			const canvas = document.getElementById("canvas");
+			if (canvas.getContext) {
+				const ctx = canvas.getContext("2d");
+				ctx.clearRect(0, 0, 500, 500);
+			}
+		}
+	</script>
+
   </body>
 </html>
+
+<!-- Button code from https://www.w3schools.com/jsref/event_onclick.asp -->
